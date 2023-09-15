@@ -1,9 +1,10 @@
 (define (domain courses)
 
     ;remove requirements that are not needed
-    (:requirements :strips :typing :negative-preconditions :fluents)
+    (:requirements :strips :typing :negative-preconditions :fluents )
 
     (:types
+        course course-level - object
         english-literacy expressive-arts health-wellbeing maths-numeracy languages sciences social-subjects technologies - course
         nq bge - course-level
         vark-type 
@@ -11,6 +12,10 @@
         support-requirement
         support-received
         student
+    )
+
+    (:constants
+        pomodoro - strategy
     )
     
     (:predicates
